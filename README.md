@@ -12,3 +12,8 @@ This project is a Sticky Navbar built using HTML and CSS. The navigation bar rem
   <li>Clean and minimal design for better usability</li>
   <li>Uses modern CSS techniques for positioning</li>
 </ul>
+<p><strong>TECHNOLOGIES USED</strong></p>
+<ul>
+  <li>HTML – Structure for the navigation bar</li>
+  <li>CSS – Styling and positioning using position: sticky;</li>
+</ul>
