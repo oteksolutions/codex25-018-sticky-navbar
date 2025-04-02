@@ -23,3 +23,7 @@ This project is a Sticky Navbar built using HTML and CSS. The navigation bar rem
   <li>Implement a mobile-friendly dropdown menu</li>
   <li>Enhance design with hover effects and animations</li>
 </ul>
+<br>
+<footer>
+    <p>&copy; 2025 <a href="https://www.linkedin.com/in/ekweme-ken" target="_blank">Ken Ekweme</a> &bull; <a href="https://www.oteksolutions.net" target="_blank">OTek Solutions</a></p>
+</footer>
