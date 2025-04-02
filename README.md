@@ -17,3 +17,9 @@ This project is a Sticky Navbar built using HTML and CSS. The navigation bar rem
   <li>HTML – Structure for the navigation bar</li>
   <li>CSS – Styling and positioning using position: sticky;</li>
 </ul>
+<p><strong>FUTURE IMPROVEMENTS</strong></p>
+<ul>
+  <li>Add a smooth scroll effect for better UX</li>
+  <li>Implement a mobile-friendly dropdown menu</li>
+  <li>Enhance design with hover effects and animations</li>
+</ul>
