@@ -83,13 +83,13 @@ main {
 section {
     min-height: 100vh;
     margin-bottom: 1.5rem;
-    padding-top: 1.5rem; /* Space for the sticky navbar */
-    scroll-margin-top: 5rem; /* Accounts for the navbar when using anchor links */
+    padding-top: 1.5rem;
+    scroll-margin-top: 5rem;
 }
 
 section h2 {
     margin-bottom: 1rem;
-    color: #2c3e50;
+    color: #378a0e;
     border-bottom: 2px solid #3498db;
     padding-bottom: 0.5rem;
     display: inline-block;
@@ -97,6 +97,7 @@ section h2 {
 
 section p {
     margin-bottom: 1rem;
+    color: #2c3e50;
 }
 
 /* Developer Footer */
