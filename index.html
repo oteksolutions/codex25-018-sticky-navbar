@@ -39,96 +39,163 @@
     </header>
 
     <main>
-        <section id="home">
-            <h2>Welcome to My Website</h2>
-            <p>This is a simple responsive website with a sticky navbar. The navigation bar will stay at the top of the page as you scroll down.</p>
-        </section>
-        
-        <section id="about">
-            <h2>About This Project</h2>
-            <p>This sticky navbar implementation uses pure CSS without any JavaScript dependencies. I wanted to create a lightweight, accessible navigation solution that works across all modern browsers and devices.</p>
-            <p>The biggest challenge was creating a responsive mobile menu that doesn't require JavaScript. I solved this using the CSS "checkbox hack" which lets us toggle the mobile menu state using only HTML and CSS. This approach keeps the page lightweight while maintaining full functionality.</p>
-            <p>For the sticky behavior, I'm using the CSS <code>position: sticky</code> property which has excellent browser support these days. This provides smooth scrolling behavior without the jumpiness that can occur with JavaScript-based sticky implementations.</p>
-            <p>Performance was another key consideration. By keeping the navbar slim and using minimal CSS transitions, the scrolling remains smooth even on lower-powered mobile devices. The total size of the CSS is under 5KB when minified, making it lightning fast to load.</p>
-        </section>
+        <div class="container">
+            <section id="home" class="section-padding">
+                <div class="hero">
+                    <h2>Welcome to My Website</h2>
+                    <p class="lead">This is a responsive website with a sticky navbar that stays at the top as you scroll down. Built with clean, semantic HTML and modern CSS techniques.</p>
+                    <div class="cta-buttons">
+                        <a href="#features" class="btn btn-primary">Explore Features</a>
+                        <a href="#about" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="about" class="section-padding">
+                <h2>About This Project</h2>
+                <div class="content-wrapper">
+                    <p>This sticky navbar implementation uses pure CSS without any JavaScript dependencies. I wanted to create a lightweight, accessible navigation solution that works across all modern browsers and devices.</p>
+                    <p>The biggest challenge was creating a responsive mobile menu that doesn't require JavaScript. I solved this using the CSS "checkbox hack" which lets us toggle the mobile menu state using only HTML and CSS. This approach keeps the page lightweight while maintaining full functionality.</p>
+                    <p>For the sticky behavior, I'm using the CSS <code>position: sticky</code> property which has excellent browser support these days. This provides smooth scrolling behavior without the jumpiness that can occur with JavaScript-based sticky implementations.</p>
+                    <p>Performance was another key consideration. By keeping the navbar slim and using minimal CSS transitions, the scrolling remains smooth even on lower-powered mobile devices. The total size of the CSS is under 5KB when minified, making it lightning fast to load.</p>
+                </div>
+            </section>
 
-        <section id="features">
-            <h2>Features & Implementation</h2>
-            <p>I've built this sticky navbar component with several key features that make it ideal for modern web projects:</p>
-            <p><strong>Browser Compatibility:</strong> Tested and working in Chrome, Firefox, Safari, and Edge. For older browsers that don't support <code>position: sticky</code>, I've included a simple fallback that defaults to a static position.</p>
-            <p><strong>Accessibility:</strong> The navbar is fully keyboard navigable and includes appropriate ARIA attributes. The mobile menu toggle is properly labeled for screen readers, and all interactive elements have appropriate focus states.</p>
-            <p><strong>Customization:</strong> The CSS variables in the root selector make it easy to customize colors, transitions, and sizing without digging through the CSS. You can quickly adapt this navbar to match your brand's color scheme.</p>
-            <p><strong>CSS-Only Animation:</strong> The subtle hover effects and mobile menu transitions are all achieved using CSS, keeping the implementation lightweight while still providing visual feedback to users.</p>
-        </section>
+            <section id="features" class="section-padding">
+                <h2>Features & Implementation</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon browser-compat"></div>
+                        <h3>Browser Compatibility</h3>
+                        <p>Tested and working in Chrome, Firefox, Safari, and Edge. For older browsers that don't support <code>position: sticky</code>, I've included a simple fallback that defaults to a static position.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon accessibility"></div>
+                        <h3>Accessibility</h3>
+                        <p>The navbar is fully keyboard navigable and includes appropriate ARIA attributes. The mobile menu toggle is properly labeled for screen readers, and all interactive elements have appropriate focus states.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon customization"></div>
+                        <h3>Customization</h3>
+                        <p>The CSS variables in the root selector make it easy to customize colors, transitions, and sizing without digging through the CSS. You can quickly adapt this navbar to match your brand's color scheme.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon animation"></div>
+                        <h3>CSS-Only Animation</h3>
+                        <p>The subtle hover effects and mobile menu transitions are all achieved using CSS, keeping the implementation lightweight while still providing visual feedback to users.</p>
+                    </div>
+                </div>
+            </section>
 
-        <section id="blog">
-            <h2>Latest Articles</h2>
-            
-            <article class="blog-post">
-                <h3>Creating Accessible Navigation Menus</h3>
-                <p class="blog-meta">Posted on April 1, 2025 | 5 min read</p>
-                <p>Accessibility is not just a nice-to-have feature—it's essential. In this post, I explore how to make navigation menus fully accessible to keyboard users and screen readers without sacrificing visual appeal. Learn about proper ARIA attributes, focus management, and keyboard navigation patterns that make your navbar accessible to all users.</p>
-                <a href="#" class="read-more">Read More</a>
-            </article>
-            
-            <article class="blog-post">
-                <h3>CSS Position Sticky: The Good, The Bad, and The Buggy</h3>
-                <p class="blog-meta">Posted on March 15, 2025 | 8 min read</p>
-                <p>The <code>position: sticky</code> property has transformed how we implement fixed navigation, but it comes with some quirks. In this deep dive, I explore common pitfalls when using sticky positioning, browser inconsistencies to watch out for, and reliable workarounds for the most common issues. Learn when to use sticky positioning and when a JavaScript solution might be better.</p>
-                <a href="#" class="read-more">Read More</a>
-            </article>
-            
-            <article class="blog-post">
-                <h3>The Checkbox Hack: CSS-Only Interactive Components</h3>
-                <p class="blog-meta">Posted on February 28, 2025 | 6 min read</p>
-                <p>No JavaScript? No problem! The "checkbox hack" is a powerful technique for creating interactive components with pure CSS. This article explains how to leverage hidden checkboxes and labels to create toggles, accordions, and mobile navigation menus without a single line of JavaScript. I also discuss the accessibility implications and best practices for implementation.</p>
-                <a href="#" class="read-more">Read More</a>
-            </article>
-            
-            <article class="blog-post">
-                <h3>Optimizing CSS for Performance</h3>
-                <p class="blog-meta">Posted on February 10, 2025 | 7 min read</p>
-                <p>CSS seems simple, but poorly optimized stylesheets can significantly impact your site's performance. In this tutorial, I share techniques for writing efficient CSS selectors, minimizing repaints and reflows, and reducing the overall file size of your stylesheets. Learn how small changes to your CSS can lead to measurable performance improvements.</p>
-                <a href="#" class="read-more">Read More</a>
-            </article>
-        </section>
+            <section id="blog" class="section-padding">
+                <h2>Latest Articles</h2>
+                
+                <div class="blog-grid">
+                    <article class="blog-post">
+                        <h3>Creating Accessible Navigation Menus</h3>
+                        <p class="blog-meta">Posted on April 1, 2025 | 5 min read</p>
+                        <p>Accessibility is not just a nice-to-have feature—it's essential. In this post, I explore how to make navigation menus fully accessible to keyboard users and screen readers without sacrificing visual appeal.</p>
+                        <a href="#" class="read-more">Read More <span class="sr-only">about Creating Accessible Navigation Menus</span></a>
+                    </article>
+                    
+                    <article class="blog-post">
+                        <h3>CSS Position Sticky: The Good, The Bad, and The Buggy</h3>
+                        <p class="blog-meta">Posted on March 15, 2025 | 8 min read</p>
+                        <p>The <code>position: sticky</code> property has transformed how we implement fixed navigation, but it comes with some quirks. In this deep dive, I explore common pitfalls and reliable workarounds.</p>
+                        <a href="#" class="read-more">Read More <span class="sr-only">about CSS Position Sticky</span></a>
+                    </article>
+                    
+                    <article class="blog-post">
+                        <h3>The Checkbox Hack: CSS-Only Interactive Components</h3>
+                        <p class="blog-meta">Posted on February 28, 2025 | 6 min read</p>
+                        <p>No JavaScript? No problem! The "checkbox hack" is a powerful technique for creating interactive components with pure CSS. This article explains how to implement it effectively.</p>
+                        <a href="#" class="read-more">Read More <span class="sr-only">about The Checkbox Hack</span></a>
+                    </article>
+                    
+                    <article class="blog-post">
+                        <h3>Optimizing CSS for Performance</h3>
+                        <p class="blog-meta">Posted on February 10, 2025 | 7 min read</p>
+                        <p>CSS seems simple, but poorly optimized stylesheets can significantly impact your site's performance. Learn how small changes to your CSS can lead to measurable improvements.</p>
+                        <a href="#" class="read-more">Read More <span class="sr-only">about Optimizing CSS for Performance</span></a>
+                    </article>
+                </div>
+            </section>
 
-        <section id="faq">
-            <h2>Frequently Asked Questions</h2>
-            
-            <div class="faq-item">
-                <h3>Does this navbar work in Internet Explorer?</h3>
-                <p>This navbar implementation uses <code>position: sticky</code>, which is not supported in IE11 and below. However, I've included a fallback that makes the navbar behave as a normal static element in unsupported browsers. If IE11 support is critical for your project, I recommend using a JavaScript-based sticky solution instead.</p>
-            </div>
-            
-            <div class="faq-item">
-                <h3>How do I change the navbar height?</h3>
-                <p>The navbar height can be adjusted by modifying the padding in the <code>#sticky-header</code> selector. For the mobile version, you'll also want to adjust the corresponding values in the media query. If you're using the CSS variables version, simply modify the <code>--nav-height</code> variable in the <code>:root</code> selector.</p>
-            </div>
-            
-            <div class="faq-item">
-                <h3>Can I add dropdown menus to this navbar?</h3>
-                <p>Yes! The current implementation doesn't include dropdowns, but they can be added with minimal additional CSS. I have a separate blog post about implementing accessible CSS-only dropdown menus that would integrate perfectly with this navbar system. The key is to use the <code>:focus-within</code> pseudo-class along with appropriate hover states.</p>
-            </div>
-            
-            <div class="faq-item">
-                <h3>Why not use JavaScript for the mobile menu?</h3>
-                <p>While JavaScript would offer more control and features, this implementation prioritizes performance and reliability. The CSS-only approach means one less dependency, faster load times, and no risk of JavaScript errors breaking your navigation. For most projects, this simple approach is sufficient. For more complex requirements, a JavaScript version might be more appropriate.</p>
-            </div>
-            
-            <div class="faq-item">
-                <h3>Is there a SASS/SCSS version available?</h3>
-                <p>Yes! You can find the SCSS source files in the GitHub repository. The SCSS version includes variables, mixins, and nested selectors that make the code more maintainable for larger projects. It's located in the <code>/scss</code> directory of the repository.</p>
-            </div>
-        </section>
+            <section id="faq" class="section-padding">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="accordion">
+                    <div class="faq-item">
+                        <h3>Does this navbar work in Internet Explorer?</h3>
+                        <div class="faq-answer">
+                            <p>This navbar implementation uses <code>position: sticky</code>, which is not supported in IE11 and below. However, I've included a fallback that makes the navbar behave as a normal static element in unsupported browsers. If IE11 support is critical for your project, I recommend using a JavaScript-based sticky solution instead.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>How do I change the navbar height?</h3>
+                        <div class="faq-answer">
+                            <p>The navbar height can be adjusted by modifying the padding in the <code>#sticky-header</code> selector. For the mobile version, you'll also want to adjust the corresponding values in the media query. If you're using the CSS variables version, simply modify the <code>--nav-height</code> variable in the <code>:root</code> selector.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Can I add dropdown menus to this navbar?</h3>
+                        <div class="faq-answer">
+                            <p>Yes! The current implementation doesn't include dropdowns, but they can be added with minimal additional CSS. I have a separate blog post about implementing accessible CSS-only dropdown menus that would integrate perfectly with this navbar system. The key is to use the <code>:focus-within</code> pseudo-class along with appropriate hover states.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Why not use JavaScript for the mobile menu?</h3>
+                        <div class="faq-answer">
+                            <p>While JavaScript would offer more control and features, this implementation prioritizes performance and reliability. The CSS-only approach means one less dependency, faster load times, and no risk of JavaScript errors breaking your navigation. For most projects, this simple approach is sufficient.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Is there a SASS/SCSS version available?</h3>
+                        <div class="faq-answer">
+                            <p>Yes! You can find the SCSS source files in the GitHub repository. The SCSS version includes variables, mixins, and nested selectors that make the code more maintainable for larger projects. It's located in the <code>/scss</code> directory of the repository.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <section id="contact">
-            <h2>Get In Touch</h2>
-            <p>Have questions about implementing this sticky navbar in your project? Feel free to reach out! I'm happy to help with any implementation challenges or customization needs.</p>
-            <p>You can find the complete source code for this project on my <a href="#">GitHub repository</a>. If you find it useful, consider giving it a star or contributing to make it even better.</p>
-            <p>For professional inquiries or custom web development work, you can email me at <a href="mailto:example@mywebsite.com">example@mywebsite.com</a> or connect with me on <a href="#">Twitter</a> and <a href="#">LinkedIn</a>.</p>
-            <p>I also write tutorials on CSS techniques like this one on my <a href="#">dev.to blog</a>, where you can find more detailed explanations and code examples.</p>
-        </section>
+            <section id="contact" class="section-padding">
+                <h2>Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p>Have questions about implementing this sticky navbar in your project? Feel free to reach out! I'm happy to help with any implementation challenges or customization needs.</p>
+                        <p>You can find the complete source code for this project on my <a href="#">GitHub repository</a>. If you find it useful, consider giving it a star or contributing to make it even better.</p>
+                        <p>For professional inquiries or custom web development work, you can email me at <a href="mailto:example@mywebsite.com">example@mywebsite.com</a> or connect with me on <a href="#">Twitter</a> and <a href="#">LinkedIn</a>.</p>
+                        <p>I also write tutorials on CSS techniques like this one on my <a href="#">dev.to blog</a>, where you can find more detailed explanations and code examples.</p>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>Send a Message</h3>
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
     </footer>
